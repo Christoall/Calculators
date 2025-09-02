@@ -1,9 +1,10 @@
-//mini java calculator ith gui
+//mini java calculator with gui
 import javax.swing.*;
 import java.awt.*;
 
 
 public class CalculatorGUI extends JFrame {
+    
     private JTextField number1Field, number2Field, resultField;
 
     public CalculatorGUI() {
@@ -99,3 +100,4 @@ public class CalculatorGUI extends JFrame {
         new CalculatorGUI();
     }
 }
+
