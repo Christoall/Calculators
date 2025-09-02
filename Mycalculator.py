@@ -71,9 +71,8 @@ tk.Button(root, text="×", command=lambda: calculate("multiply")).grid(row=2, co
 tk.Button(root, text="÷", command=lambda: calculate("divide")).grid(row=2, column=1)
 tk.Button(root, text="Clear History", command=lambda: history.clear() or update_history()).grid(row=6, column=0, columnspan=2, pady=5)
 tk.Button(root, text="Exit", command=root.quit).grid(row=7, column=0, columnspan=2, pady=5)
-tk.Button(root, text="Help", command=lambda: result_label.config(text="Enter numbers and choose an operation")).grid(row=8, column=0, columnspan=2, pady=5)
 tk.Button(root, text="delete last", command=lambda: history.pop() if history else None or update_history()).grid(row=9, column=0, columnspan=2, pady=5)
-tk.Button(root, text="equals", command=lambda: result_label.config(text=f"Result: {history[-1] if history else 'No history'}")).grid(row=10, column=0, columnspan=2, pady=5)
+
 
 # Result label
 result_label = tk.Label(root, text="Result: ")
@@ -85,3 +84,4 @@ history_text = tk.Text(root, height=5, width=20)
 history_text.grid(row=5, column=0, columnspan=2)
 
 root.mainloop()
+
