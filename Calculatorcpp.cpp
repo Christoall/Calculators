@@ -1,4 +1,4 @@
-// this will be a mini c++ calculator with some gui interface for practise
+// this will be a mini C++ calculator with some GUI interface for practice, no GUI yet tho
 #include <iostream>
 #include <limits>
 #include <cmath>   // for isnan
@@ -43,19 +43,20 @@ int main() {
 
     while (true) {
         displayMenu();
+        double result = 0;
         cin >> choice;
+        
         if (choice == 5) {
             cout << "Exiting the calculator. Goodbye!" << endl;
         }
 
-        
         cout << "Enter the first number: ";
         cin >> num1;
         cout << "Enter the second number: ";
         cin >> num2;
 
 
-        double result = 0;
+        
         switch (choice) {
             case 1:
                 result = calc.add(num1, num2);
@@ -84,3 +85,4 @@ int main() {
 
     return 0;
 }
+
